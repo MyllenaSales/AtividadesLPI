@@ -1,12 +1,12 @@
 package model;
 
 public class Participante {
-    String nome;
-    String cpf;
-    String email;
-    String instituicaoEnsino;
-    String curso;
-    String tipoParticipacao;
+    private String nome;
+    private String cpf;
+    private String email;
+    private String instituicaoEnsino;
+    private String curso;
+    private String tipoParticipacao;
     public String getNome() {
         return nome;
     }

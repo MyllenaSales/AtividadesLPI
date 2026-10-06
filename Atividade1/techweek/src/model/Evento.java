@@ -3,13 +3,14 @@ package model;
 import java.time.LocalDateTime;
 
 public class Evento {
-    String nome;
-    String descricao;
-    LocalDateTime dataHorario;
-    String local;
-    String tema;
-    String modalidade;
-    String situacao;
+    private String nome;
+    private String descricao;
+    private LocalDateTime dataHorario;
+    private String local;
+    private String tema;
+    private String modalidade;
+    private String situacao;
+    
     public String getNome() {
         return nome;
     }

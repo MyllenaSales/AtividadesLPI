@@ -3,10 +3,10 @@ package model;
 import java.time.LocalDateTime;
 
 public class Pagamento {
-    double valor;
-    LocalDateTime data;
-    String formaPagamento;
-    String status;
+    private double valor;
+    private LocalDateTime data;
+    private String formaPagamento;
+    private String status;
     public double getValor() {
         return valor;
     }

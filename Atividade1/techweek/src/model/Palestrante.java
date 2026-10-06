@@ -1,11 +1,11 @@
 package model;
 
 public class Palestrante {
-    String nome;
-    String foto;
-    String email;
-    String biografia;
-    String atuacao;
+    private String nome;
+    private String foto;
+    private String email;
+    private String biografia;
+    private String atuacao;
     public String getNome() {
         return nome;
     }

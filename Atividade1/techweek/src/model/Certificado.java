@@ -2,11 +2,11 @@ package model;
 import java.time.LocalDateTime;
 
 public class Certificado {
-    Participante participante;
-    Evento evento;
-    int cargaHoraria;
-    LocalDateTime dataEmissao;
-    String codigoValidacao;
+    private Participante participante;
+    private Evento evento;
+    private int cargaHoraria;
+    private LocalDateTime dataEmissao;
+    private String codigoValidacao;
     
     public Participante getParticipante() {
         return participante;

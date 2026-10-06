@@ -1,8 +1,8 @@
 package model;
 
 public class Organizador {
-    String nome;
-    String email;
+    private String nome;
+    private String email;
     public String getNome() {
         return nome;
     }

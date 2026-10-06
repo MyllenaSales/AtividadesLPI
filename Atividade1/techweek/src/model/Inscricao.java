@@ -3,11 +3,11 @@ package model;
 import java.time.LocalDateTime;
 
 public class Inscricao {
-    Participante participante;
-    Evento evento;
-    LocalDateTime dataInscricao;
-    String status;
-    String tipoInscricao;
+    private Participante participante;
+    private Evento evento;
+    private LocalDateTime dataInscricao;
+    private String status;
+    private String tipoInscricao;
     
     public Participante getParticipante() {
         return participante;
