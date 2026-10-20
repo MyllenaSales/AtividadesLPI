@@ -9,6 +9,8 @@ import evento.dominio.Organizador;
 import evento.dominio.Participante;
 
 public class App {
+    static List<Atividade> atividades = new ArrayList<>();
+
     public static void main(String[] args) throws Exception {
 
         Organizador organizador = new Organizador("Maria", "maria@ifba.edu.br", "Computação!");
@@ -20,9 +22,7 @@ public class App {
         participantes.add(participante2);
 
         Scanner input = new Scanner(System.in);
-        List<Atividade> atividades = new ArrayList<>();
-
-        /*
+     
         for(int i=0;i<3;i++){
             System.out.println("Titulo: ");
             String titulo = input.nextLine();
@@ -35,7 +35,7 @@ public class App {
             
             System.out.println("tipo: ");
             String tipo = input.nextLine();
-            Atividade a1 = new Atividade(titulo, descricao, responsavel, tipo);
+            Atividade a1 = new Atividade(i, titulo, descricao, responsavel, tipo);
 
             atividades.add(a1);
         }
@@ -47,9 +47,9 @@ public class App {
             System.out.println("Tipo"+a.tipo);
         }
 
-       // Evento evento = new Evento("Teck week", LocalDate.of(2026, 10, 20), "IFBA", 100, organizador);
+       Evento evento = new Evento("Teck week", LocalDate.of(2026, 10, 20), "IFBA", 100, organizador);
        // System.out.println( "O evento " + evento.getNome() + " foi organizado por " + evento.getOrganizador().getNome() + ", do curso de " + evento.getOrganizador().getSetor() );
-                 */
+                
 
         List<Aluno> alunos = new ArrayList<>();
 
@@ -76,19 +76,25 @@ public class App {
             System.out.println("Nome: "+a.nota);
         }
 
+
+  
         input.close();
+
 
     }
 
 }
+
 class Atividade{
+    int id;
     String titulo, descricao, responsavel, tipo;
 
-	public Atividade(String titulo, String descricao, String responsavel, String tipo) {
+	public Atividade(int id, String titulo, String descricao, String responsavel, String tipo) {
 		this.titulo = titulo;
 		this.descricao = descricao;
 		this.responsavel = responsavel;
 		this.tipo = tipo;
+        this.id=id;
 	}
 
 	public Atividade() {
@@ -111,3 +117,16 @@ class Aluno{
 	}
     
 }
+/* 
+public static boolean remover (int id){
+    for(Atividade a: atividades){
+        if(a.id == id){
+            atividades.remove(a);
+            return a;
+        }
+    }
+}
+
+public void inserir(){
+            
+}*/
