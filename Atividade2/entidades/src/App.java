@@ -1,11 +1,11 @@
-import java.time.LocalDate;
+//import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 import java.util.Vector;
 
-import evento.dominio.Evento;
-import evento.dominio.Organizador;
+//import evento.dominio.Evento;
+//import evento.dominio.Organizador;
 import evento.dominio.Participante;
 
 public class App {
@@ -13,7 +13,7 @@ public class App {
 
     public static void main(String[] args) throws Exception {
 
-        Organizador organizador = new Organizador("Maria", "maria@ifba.edu.br", "Computação!");
+      //  Organizador organizador = new Organizador("Maria", "maria@ifba.edu.br", "Computação!");
 
         List<Participante> participantes = new Vector<>();
         Participante participante1 = new Participante("Jose", "jose@ifba.edu.br");
@@ -47,7 +47,7 @@ public class App {
             System.out.println("Tipo"+a.tipo);
         }
 
-       Evento evento = new Evento("Teck week", LocalDate.of(2026, 10, 20), "IFBA", 100, organizador);
+       //Evento evento = new Evento("Teck week", LocalDate.of(2026, 10, 20), "IFBA", 100, organizador);
        // System.out.println( "O evento " + evento.getNome() + " foi organizado por " + evento.getOrganizador().getNome() + ", do curso de " + evento.getOrganizador().getSetor() );
                 
 
