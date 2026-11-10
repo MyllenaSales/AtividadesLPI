@@ -6,10 +6,10 @@ public class Funcionario {
     public Funcionario() {
     }
     public Funcionario(String matricula, String nome, String cargo, float salario) {
-        this.matricula = matricula;
-        this.nome = nome;
-        this.cargo = cargo;
-        this.salario = salario;
+        setMatricula(matricula);
+        setNome(nome);
+        setCargo(cargo);
+        setSalario(salario);
     }
     public String getMatricula() {
         return matricula;

@@ -11,11 +11,11 @@ public class Disciplina {
         
     }
     public Disciplina(int id, String nome, String professor, String curso, List<Float> notas) {
-        this.id = id;
-        this.nome = nome;
-        this.professor = professor;
-        this.curso = curso;
-        this.notas = notas;
+        setId(id);
+        setNome(nome);
+        setProfessor(professor);
+        setCurso(curso);
+        setNotas(notas);
     }
     public int getId() {
         return id;

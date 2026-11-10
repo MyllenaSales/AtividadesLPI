@@ -7,11 +7,11 @@ private float preco;
 public Produto() {
 }
 public Produto(int codigo, int estoque, String descricao, String categoria, float preco) {
-    this.codigo = codigo;
-    this.estoque = estoque;
-    this.descricao = descricao;
-    this.categoria = categoria;
-    this.preco = preco;
+    setCodigo(codigo);
+    setEstoque(estoque);
+    setDescricao(descricao);
+    setCategoria(categoria);
+    setPreco(preco);
 }
 public int getCodigo() {
     return codigo;

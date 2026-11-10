@@ -7,12 +7,12 @@ private boolean disponivel;
 public Livro() {
 }
 public Livro(int ano, int paginas, String isbn, String titulo, String autor, boolean disponivel) {
-    this.ano = ano;
-    this.paginas = paginas;
-    this.isbn = isbn;
-    this.titulo = titulo;
-    this.autor = autor;
-    this.disponivel = disponivel;
+    setAno(ano);
+    setPaginas(paginas);
+    setIsbn(isbn);
+    setTitulo(titulo);
+    setAutor(autor);
+    setDisponivel(disponivel);
 }
 public int getAno() {
     return ano;
