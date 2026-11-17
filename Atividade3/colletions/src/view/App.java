@@ -1,3 +1,4 @@
+package view;
 import model.*;
 import controller.*;
 import java.util.Scanner;
